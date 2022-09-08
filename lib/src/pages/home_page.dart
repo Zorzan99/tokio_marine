@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           const SignInScreen(),
-          const FloatingActionButtonPage()
+          const FloatingActionButtonPage(),
         ],
       ),
     );

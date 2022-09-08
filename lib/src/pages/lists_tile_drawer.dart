@@ -7,6 +7,7 @@ class ListsTileDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Divider(
           height: 1,

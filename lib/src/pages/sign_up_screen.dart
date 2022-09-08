@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:tokio_marine_app/src/commom_widgets/custom_text_field.dart';
 import 'package:tokio_marine_app/src/pages/drawer_page.dart';
+import 'package:tokio_marine_app/src/pages/home_page.dart';
 import 'package:tokio_marine_app/src/utils/colors_standar.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -40,10 +41,21 @@ class SignUpScreen extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 320, top: 25),
+                      child: IconButton(
+                        onPressed: () {
+                          Get.to(const HomePage());
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back_ios,
+                        ),
+                      ),
+                    ),
                     SizedBox(
                       child: Image.asset(
                         'assets/images/2.png',
-                        height: 150,
+                        height: 100,
                       ),
                     ),
                     const Text(
@@ -161,6 +173,23 @@ class SignUpScreen extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 40),
+                          child: IconButton(
+                            onPressed: () {
+                              Get.to(const HomePage());
+                            },
+                            icon: const Icon(
+                              Icons.arrow_back_ios,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                     SizedBox(
                       child: Image.asset(
                         'assets/images/2.png',
